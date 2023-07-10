@@ -14,7 +14,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(Desktop main.cpp Desktop.h Desktop.cpp assets/desktop.ui)
+add_executable(Desktop main.cpp Desktop.h Desktop.cpp assets/desktop.ui assets/ui_desktop.h)
 target_link_libraries(Desktop
         Qt::Core
         Qt::Gui
