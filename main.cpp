@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 
     // 工具 启动
     if (tools_activated) {
-        auto *tool = new Tool();
+        auto *tool = new Tool(root, nullptr);
         tool->show();
     }
     // TODO: 时钟 启动

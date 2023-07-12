@@ -2,7 +2,7 @@
 #include <QMessageBox>
 #include <QFile>
 #include <Windows.h>
-#include <jsoncpp.h>
+#include <json.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {}
@@ -23,7 +23,7 @@ void release(WORD key);
 class Tool : public QWidget {
     Q_OBJECT
 public:
-    explicit Tool(QWidget *parent = nullptr);
+    explicit Tool(Json::Value root, QWidget *parent = nullptr);
     ~Tool() override;
 
 private:
