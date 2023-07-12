@@ -1,5 +1,27 @@
 #include "Tool.h"
 
+void press(WORD key) {
+    INPUT input;
+    input.type = INPUT_KEYBOARD;
+    input.ki.wVk = key;
+    input.ki.dwFlags = 0;
+    input.ki.time = 0;
+    input.ki.dwExtraInfo = 0;
+
+    SendInput(1, &input, sizeof(INPUT));
+}
+
+void release(WORD key) {
+    INPUT input;
+    input.type = INPUT_KEYBOARD;
+    input.ki.wVk = key;
+    input.ki.dwFlags = KEYEVENTF_KEYUP;
+    input.ki.time = 0;
+    input.ki.dwExtraInfo = 0;
+
+    SendInput(1, &input, sizeof(INPUT));
+}
+
 Tool::Tool(QWidget *parent)
     : QWidget(parent), ui(new Ui::Tool()) {
     ui->setupUi(this);
@@ -23,6 +45,7 @@ Tool::Tool(QWidget *parent)
     this->setWindowOpacity(0.75);
     int swidth  = GetSystemMetrics(SM_CXSCREEN);
     this->move(swidth - this->width(), 340);
+
 }
 
 Tool::~Tool() {

@@ -7,7 +7,7 @@
         "activated": false
     },
     "Genshin_Impact": {
-        "uid": 123456789,
+        "uid": 128801387,
         "activated": true
     },
     "tools": {
@@ -15,8 +15,9 @@
         "applications": [
             {
                 "icon": "",
-                "path": "",
-                "name": ""
+                "name": "",
+                "commond": "",
+                "key": ["VK_LCONTROL", "VK_LSHIFT", "0x52"]
             }
         ]
     }

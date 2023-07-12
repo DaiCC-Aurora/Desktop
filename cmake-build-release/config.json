@@ -7,12 +7,37 @@
         "activated": false
     },
     "Genshin_Impact": {
-        "uid": 123456789,
+        "uid": 128801387,
         "activated": true
     },
     "tools": {
         "activated": true,
         "applications": [
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            },
             {
                 "icon": "",
                 "path": "",

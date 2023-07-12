@@ -10,12 +10,18 @@
     <height>400</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>HarmonyOS Sans SC</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>tool</string>
   </property>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="assets/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
