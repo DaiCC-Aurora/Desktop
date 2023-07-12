@@ -1,0 +1,23 @@
+{
+    "time": {
+        "weather_key": "",
+        "location": "",
+        "language": "",
+        "unit": "",
+        "activated": false
+    },
+    "Genshin_Impact": {
+        "uid": 123456789,
+        "activated": true
+    },
+    "tools": {
+        "activated": true,
+        "applications": [
+            {
+                "icon": "",
+                "path": "",
+                "name": ""
+            }
+        ]
+    }
+}

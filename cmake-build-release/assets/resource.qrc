@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="assets">
+    <file>wt.png</file>
+    <file>canliang.png</file>
+    <file>tili.png</file>
+  </qresource>
+</RCC>

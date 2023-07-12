@@ -1,0 +1,5 @@
+F:/proj/Desktop/cmake-build-release/CMakeFiles/Desktop.dir
+F:/proj/Desktop/cmake-build-release/CMakeFiles/edit_cache.dir
+F:/proj/Desktop/cmake-build-release/CMakeFiles/rebuild_cache.dir
+F:/proj/Desktop/cmake-build-release/CMakeFiles/Desktop_autogen_timestamp_deps.dir
+F:/proj/Desktop/cmake-build-release/CMakeFiles/Desktop_autogen.dir

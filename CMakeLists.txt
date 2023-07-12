@@ -13,12 +13,15 @@ find_package(Qt6 COMPONENTS
         Gui
         Widgets
         REQUIRED)
+# 添加jsoncpp
+include_directories(Desktop F:/Application/jsoncpp/include/json)
 
-add_executable(Desktop main.cpp Desktop.h Desktop.cpp assets/desktop.ui assets/ui_desktop.h)
+add_executable(Desktop main.cpp assets/time.ui tool.ui assets/genshinimpact.ui GenshinImpact.h GenshinImpact.cpp ui_GenshinImpact.h Tool.cpp Tool.h Tool.h ui_Tool.h)
 target_link_libraries(Desktop
         Qt::Core
         Qt::Gui
         Qt::Widgets
+        E:/Desktop/build/lib/libjsoncpp.a
         )
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)

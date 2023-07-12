@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GenshinImpact</class>
+ <widget class="QWidget" name="GenshinImpact">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>HarmonyOS Sans SC</family>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>GenshinImpact</string>
+  </property>
+  <widget class="QLabel" name="wt">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>150</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resource.qrc">:/assets/wt.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cangliang">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>250</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resource.qrc">:/assets/canliang.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tili">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>50</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resource.qrc">:/assets/tili.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tili_lb">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>50</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>HarmonyOS Sans SC</family>
+     <pointsize>24</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;160/160&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="tili_bar">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>100</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>45</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="wt_bar">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>200</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>45</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wt_lb">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>150</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>HarmonyOS Sans SC</family>
+     <pointsize>24</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;4/4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="canliang_bar">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>300</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>45</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="canliang_lb">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>250</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>HarmonyOS Sans SC</family>
+     <pointsize>24</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;不可用&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
