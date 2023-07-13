@@ -14,10 +14,40 @@
         "activated": true,
         "applications": [
             {
-                "icon": "F:/proj/Desktop/assets/canliang.png",
-                "name": "bing",
-                "commond": "start https://cn.bing.com",
+                "icon": "F:/Application/Desktop/icon/mu_left.png",
+                "name": "music left",
+                "commond": "",
+                "key": [162, 164, 37]
+            },
+            {
+                "icon": "F:/Application/Desktop/icon/music.png",
+                "name": "music play or stop",
+                "commond": "",
                 "key": [162, 160, 80]
+            },
+            {
+                "icon": "F:/Application/Desktop/icon/mu_right.png",
+                "name": "music right",
+                "commond": "",
+                "key": [162, 164, 39]
+            },
+            {
+                "icon": "F:/Application/Desktop/icon/vol_down.png",
+                "name": "vol down (neteast music)",
+                "commond": "",
+                "key": [162, 164, 40]
+            },
+            {
+                "icon": "F:/Application/Desktop/icon/plan.png",
+                "name": "Windows To Do",
+                "commond": "E:/Desktop/Desk/WTD.lnk",
+                "key": []
+            },
+            {
+                "icon": "F:/Application/Desktop/icon/vol_up.png",
+                "name": "vol up (neteast music)",
+                "commond": "",
+                "key": [162, 164, 38]
             }
         ]
     }

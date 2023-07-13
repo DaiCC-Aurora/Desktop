@@ -23,7 +23,7 @@ void release(WORD key) {
 }
 
 Tool::Tool(Json::Value root, QWidget *parent)
-    : QWidget(parent), ui(new Ui::Tool()) {
+    : QWidget(parent), ui(new Ui::Tool())  {
     ui->setupUi(this);
 
     // 加载QSS
@@ -70,7 +70,7 @@ Tool::Tool(Json::Value root, QWidget *parent)
         Json::Value application = applications[i];
         std::string icon    = application["icon"].asString(),
                     name    = application["name"].asString();
-        const char *commond = application["commond"].asCString();
+        auto commond = application["commond"].asString();
         Json::Value key = application["key"];
 
         // 新建QPushButton
@@ -84,7 +84,7 @@ Tool::Tool(Json::Value root, QWidget *parent)
             QString str = QString::fromStdString("border-image: url(" + icon + ")");
             bt->setStyleSheet(str);
             bt->setWhatsThis(QString::fromStdString(name));
-            if ((commond == nullptr) && (key.isNull())) {
+            if ((commond.empty()) && (key.isNull())) {
                 QMessageBox::warning(nullptr, "Oops", "☹️ 加载命令/键为空, 请检查config.json文件");
                 std::exit(EXIT_FAILURE);
             } else {
@@ -92,7 +92,7 @@ Tool::Tool(Json::Value root, QWidget *parent)
                 connect(bt, &QPushButton::clicked, this, [=]() {
                     if (~key.isNull()) {
                         std::vector<WORD> k_v;
-                        for (int i; i < key.size(); ++i) {
+                        for (int i; i < 3; ++i) {
                             WORD k = key[i].asInt();
                             k_v.push_back(k);
                         }
@@ -104,7 +104,9 @@ Tool::Tool(Json::Value root, QWidget *parent)
                             release(k_v[i]);
                         }
                     }
-                    system(commond);
+                    if (~commond.empty()) {
+                        system(commond.c_str());
+                    }
                 });
             }
         } else {
