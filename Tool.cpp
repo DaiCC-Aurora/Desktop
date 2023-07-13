@@ -47,29 +47,65 @@ Tool::Tool(Json::Value root, QWidget *parent)
     this->move(swidth - this->width(), 340);
 
     // 加载QPushButton
+    // 获取json信息
     Json::Value tools = root["tools"];
-    int numApplication = tools["application"].size();
+    int numApplication = tools["applications"].size();
     if (numApplication > 6) {
         QMessageBox::warning(nullptr, "Oops", "☹️ 设置图标过多, 请删除一些后再重试 (最多6项)");
         std::exit(EXIT_FAILURE);
     }
-    Json::Value applications = tools["application"];
+    Json::Value applications = tools["applications"];
+
+    // 定义样式 550, 400
+    const int style[6][2] = {
+            {100, 0},
+            {260, 0},
+            {400, 0},
+            {100, 120},
+            {260, 120},
+            {400, 120}
+    };
+    // 创建
     for (int i = 0; i < numApplication; ++i) {
         Json::Value application = applications[i];
         std::string icon    = application["icon"].asString(),
-                    name    = application["name"].asString(),
-                    commond = application["commond"].asString(),
-                    key     = application["key"].asString();
+                    name    = application["name"].asString();
+        const char *commond = application["commond"].asCString();
+        Json::Value key = application["key"];
 
-        // TODO: 新建QPushButton
+        // 新建QPushButton
+        auto *bt = new QPushButton;
+        bt->setParent(this);
+        bt->setGeometry(style[i][0], style[i][1], 80, 80);
+        bt->show();
 
         if ((~icon.empty()) && (~name.empty())) {
             // icon, name 不为空
-            if ((commond.empty()) && key.empty()) {
+            QString str = QString::fromStdString("border-image: url(" + icon + ")");
+            bt->setStyleSheet(str);
+            bt->setWhatsThis(QString::fromStdString(name));
+            if ((commond == nullptr) && (key.isNull())) {
                 QMessageBox::warning(nullptr, "Oops", "☹️ 加载命令/键为空, 请检查config.json文件");
                 std::exit(EXIT_FAILURE);
             } else {
-                // TODO: 链接QPushbutton和信号
+                // 链接QPushbutton和信号
+                connect(bt, &QPushButton::clicked, this, [=]() {
+                    if (~key.isNull()) {
+                        std::vector<WORD> k_v;
+                        for (int i; i < key.size(); ++i) {
+                            WORD k = key[i].asInt();
+                            k_v.push_back(k);
+                        }
+                        // 依次按下并释放
+                        for (int i; i < k_v.size(); ++i) {
+                            press(k_v[i]);
+                        }
+                        for (int i; i < k_v.size(); ++i) {
+                            release(k_v[i]);
+                        }
+                    }
+                    system(commond);
+                });
             }
         } else {
             QMessageBox::warning(nullptr, "Oops", "☹️ 加载命令/键为空, 请检查config.json文件");

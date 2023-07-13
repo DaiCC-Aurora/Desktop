@@ -14,34 +14,10 @@
         "activated": true,
         "applications": [
             {
-                "icon": "",
-                "path": "",
-                "name": ""
-            },
-            {
-                "icon": "",
-                "path": "",
-                "name": ""
-            },
-            {
-                "icon": "",
-                "path": "",
-                "name": ""
-            },
-            {
-                "icon": "",
-                "path": "",
-                "name": ""
-            },
-            {
-                "icon": "",
-                "path": "",
-                "name": ""
-            },
-            {
-                "icon": "",
-                "path": "",
-                "name": ""
+                "icon": "F:/proj/Desktop/assets/canliang.png",
+                "name": "bing",
+                "commond": "start https://cn.bing.com",
+                "key": [162, 160, 80]
             }
         ]
     }

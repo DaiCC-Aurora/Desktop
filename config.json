@@ -14,10 +14,10 @@
         "activated": true,
         "applications": [
             {
-                "icon": "",
-                "name": "",
-                "commond": "",
-                "key": ["VK_LCONTROL", "VK_LSHIFT", "0x52"]
+                "icon": "F:/proj/Desktop/assets/canliang.png",
+                "name": "bing",
+                "commond": "start https://cn.bing.com",
+                "key": [162, 160, 80]
             }
         ]
     }

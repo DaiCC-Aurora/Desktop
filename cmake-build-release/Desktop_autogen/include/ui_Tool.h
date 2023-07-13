@@ -24,6 +24,10 @@ public:
         if (Tool->objectName().isEmpty())
             Tool->setObjectName("Tool");
         Tool->resize(550, 400);
+        QFont font;
+        font.setFamilies({QString::fromUtf8("HarmonyOS Sans SC")});
+        font.setPointSize(16);
+        Tool->setFont(font);
 
         retranslateUi(Tool);
 

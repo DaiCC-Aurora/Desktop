@@ -148,10 +148,13 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/6.5.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/QApplication \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/QMessageBox \
+  F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/QPushButton \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/QWidget \
+  F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qapplication.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qdialog.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qmessagebox.h \
+  F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qpushbutton.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   F:/Application/Qt/6.5.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -221,6 +224,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/deque.tcc \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
@@ -235,6 +239,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/iterator_concepts.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
@@ -269,6 +274,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_mutex.h \
@@ -276,6 +282,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_deque.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
@@ -288,6 +295,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
@@ -318,6 +326,7 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/deque \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
@@ -333,6 +342,8 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
@@ -348,6 +359,8 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+  F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
   F:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
@@ -608,4 +621,13 @@ F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/
   F:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wow64apiset.h \
   F:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypes.h \
   F:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h \
+  F:/Application/jsoncpp/include/json/allocator.h \
+  F:/Application/jsoncpp/include/json/config.h \
+  F:/Application/jsoncpp/include/json/forwards.h \
+  F:/Application/jsoncpp/include/json/json.h \
+  F:/Application/jsoncpp/include/json/json_features.h \
+  F:/Application/jsoncpp/include/json/reader.h \
+  F:/Application/jsoncpp/include/json/value.h \
+  F:/Application/jsoncpp/include/json/version.h \
+  F:/Application/jsoncpp/include/json/writer.h \
   F:/proj/Desktop/ui_Tool.h
