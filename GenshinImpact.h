@@ -1,9 +1,6 @@
+#pragma once
+#include "includes.h"
 #include "ui_GenshinImpact.h"
-#include <QFile>
-#include <QMessageBox>
-#include <Windows.h>
-#include <QSystemTrayIcon>
-#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {}

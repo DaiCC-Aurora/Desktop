@@ -1,9 +1,9 @@
 {
     "time": {
-        "weather_key": "",
-        "location": "",
-        "language": "",
-        "unit": "",
+        "weather_key": "Sv8nxmtsw4SjXQGbT",
+        "location": "shaoguan",
+        "language": "zh-Hans",
+        "unit": "c",
         "activated": false
     },
     "Genshin_Impact": {

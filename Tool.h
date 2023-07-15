@@ -1,15 +1,6 @@
+#pragma once
+#include "includes.h"
 #include "ui_Tool.h"
-#include <QMessageBox>
-#include <QFile>
-#include <Windows.h>
-#include <json.h>
-#include <QPushButton>
-#include <vector>
-
-#ifndef deb
-#include <iostream>
-#define deb(str) std::cout<<"deb "<<str<<std::endl;
-#endif
 
 QT_BEGIN_NAMESPACE
 namespace Ui {}

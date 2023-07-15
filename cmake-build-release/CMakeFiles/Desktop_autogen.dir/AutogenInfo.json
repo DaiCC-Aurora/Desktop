@@ -226,13 +226,26 @@
 			null
 		],
 		[ "F:/proj/Desktop/Tool.h", "MU", "EWIEGA46WW/moc_Tool.cpp", null ],
+		[ "F:/proj/Desktop/clock.h", "MU", "EWIEGA46WW/moc_clock.cpp", null ],
+		[
+			"F:/proj/Desktop/includes.h",
+			"MU",
+			"EWIEGA46WW/moc_includes.cpp",
+			null
+		],
 		[
 			"F:/proj/Desktop/ui_GenshinImpact.h",
 			"MU",
 			"EWIEGA46WW/moc_ui_GenshinImpact.cpp",
 			null
 		],
-		[ "F:/proj/Desktop/ui_Tool.h", "MU", "EWIEGA46WW/moc_ui_Tool.cpp", null ]
+		[ "F:/proj/Desktop/ui_Tool.h", "MU", "EWIEGA46WW/moc_ui_Tool.cpp", null ],
+		[
+			"F:/proj/Desktop/ui_clock.h",
+			"MU",
+			"EWIEGA46WW/moc_ui_clock.cpp",
+			null
+		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "F:/proj/Desktop/cmake-build-release/Desktop_autogen/include",
@@ -262,6 +275,7 @@
 	[
 		"F:/proj/Desktop/Desktop",
 		"F:/Application/jsoncpp/include/json",
+		"F:/Application/httplib",
 		"F:/Application/Qt/6.5.0/mingw_64/include/QtCore",
 		"F:/Application/Qt/6.5.0/mingw_64/include",
 		"F:/Application/Qt/6.5.0/mingw_64/mkspecs/win32-g++",
@@ -307,10 +321,11 @@
 	[
 		[ "F:/proj/Desktop/GenshinImpact.cpp", "MU", null ],
 		[ "F:/proj/Desktop/Tool.cpp", "MU", null ],
+		[ "F:/proj/Desktop/clock.cpp", "MU", null ],
 		[ "F:/proj/Desktop/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [],
+	"UIC_SEARCH_PATHS" : [ "F:/proj/Desktop/assets" ],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

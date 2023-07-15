@@ -16,14 +16,24 @@ find_package(Qt6 COMPONENTS
 # 添加jsoncpp
 include_directories(Desktop F:/Application/jsoncpp/include/json)
 
-add_executable(Desktop main.cpp assets/time.ui tool.ui assets/genshinimpact.ui GenshinImpact.h GenshinImpact.cpp ui_GenshinImpact.h Tool.cpp Tool.h Tool.h ui_Tool.h)
+# 添加curl
+#include_directories(Desktop F:/Application/curl/include/)
+
+# 添加httplib
+include_directories(Desktop F:/Application/httplib)
+
+# 设置ui路径
+set(CMAKE_AUTOUIC_SEARCH_PATHS "assets")
+
+add_executable(Desktop main.cpp assets/clock.ui assets/tool.ui assets/genshinimpact.ui GenshinImpact.h GenshinImpact.cpp ui_GenshinImpact.h Tool.cpp Tool.h Tool.h ui_Tool.h clock.cpp clock.h ui_clock.h includes.h)
 target_link_libraries(Desktop
         Qt::Core
         Qt::Gui
         Qt::Widgets
         E:/Desktop/build/lib/libjsoncpp.a
+        F:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libws2_32.a
         )
-
+#        F:/Application/build/lib/Release/libcurl_imp.lib
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)
     if (MSVC AND CMAKE_BUILD_TYPE MATCHES "Debug")

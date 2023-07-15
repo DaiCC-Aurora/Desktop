@@ -1,10 +1,10 @@
 {
     "time": {
-        "weather_key": "",
-        "location": "",
-        "language": "",
-        "unit": "",
-        "activated": false
+        "weather_key": "Sv8nxmtsw4SjXQGbT",
+        "location": "shaoguan",
+        "language": "zh-Hans",
+        "unit": "c",
+        "activated": true
     },
     "Genshin_Impact": {
         "uid": 128801387,
