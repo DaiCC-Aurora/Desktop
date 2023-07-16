@@ -68,30 +68,37 @@ void Clock::get_weather(Json::Value root) {
     httplib::Client cli("http://api.seniverse.com");
     std::string path = "/v3/weather/now.json?key=" + key + "&location=" + location + "&language=" + language + "&unit=" + unit;
     auto response = cli.Get(path);
+
+    Json::CharReaderBuilder builder;
+    Json::Value res;
+    std::string err;
+
     if (response && response->status == 200) {
-        Json::Value res = response->body;
-        Json::Value result = res[0];
-        std::cout << result << std::endl;
-        // {"results":[{"location":{"id":"WS2V1N2FZZ77","name":"韶关","country":"CN","path":"韶关,韶关,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"now":{"text":"多云","code":"4","temperature":"34"},"last_update":"2023-07-15T18:00:00+08:00"}]}
-        Json::Value js_now = res["now"];
+        std::istringstream input(response->body);
+        if (Json::parseFromStream(builder, input, &res, &err)) {
+            // ["results"][0]["now"]
+            Json::Value js_now = res["results"][0]["now"];
 
-        QString text = QString::fromStdString(js_now["text"].asString());
-        std::string code = js_now["code"].asString();
-        QString temperature = QString::fromStdString(js_now["temperature"].asString());
+            QString text = QString::fromStdString(js_now["text"].asString());
+            std::string code = js_now["code"].asString();
+            QString temperature = QString::fromStdString(js_now["temperature"].asString());
 
-        // 显示到Widget中
-        if (unit == "f") {
-            ui->temperature->setText(temperature + QString::fromUtf8("℉"));
+            // 显示到Widget中
+            if (unit == "f") {
+                ui->temperature->setText(temperature + QString::fromUtf8("℉"));
+            } else {
+                ui->temperature->setText(temperature + QString::fromUtf8("℃"));
+            }
+            ui->wea->setText(text);
+            QString img_path = "./assets/weather/" + QString::fromStdString(code) + ".png";
+            auto *img = new QImage(img_path);
+            ui->img->setPixmap(QPixmap::fromImage(*img));
         } else {
-            ui->temperature->setText(temperature + QString::fromUtf8("℃"));
+            QMessageBox::warning(nullptr, "Oops", "☹️ 天气获取失败, 请检查网络及配置\nError" + QString::fromStdString(err));
+            std::exit(EXIT_FAILURE);
         }
-        ui->wea->setText(text);
-        QString img_path = "./assets/weather/" + QString::fromStdString(code) + ".png";
-        auto *img = new QImage(img_path);
-        ui->img->setPixmap(QPixmap::fromImage(*img));
-
     } else {
-        QMessageBox::warning(nullptr, "Oops", "☹️ 天气获取失败, 请检查网络及配置");
+        QMessageBox::warning(nullptr, "Oops", "☹️ 天气获取失败, 请检查网络及配置\nError" + QString::fromStdString(err));
         std::exit(EXIT_FAILURE);
     }
 }

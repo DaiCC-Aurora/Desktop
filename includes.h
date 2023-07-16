@@ -13,4 +13,11 @@
 #include <QFile>
 #include <QPushbutton>
 #include <QDebug>
+
+// debug
+#ifndef deb
+#include <iostream>
+#define deb(str) std::cout<<"deb"<<str<<std::endl;
+#endif
+
 #endif
