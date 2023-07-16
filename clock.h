@@ -17,7 +17,7 @@ private:
     Ui::clock *ui;
     QTimer *timer, *timer_wea;
 
-    std::string get_weather(Json::Value root);
+    void get_weather(Json::Value root);
     void update_time();
     void get_sen();
 };

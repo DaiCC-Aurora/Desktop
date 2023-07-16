@@ -12,4 +12,5 @@
 #include <QMessageBox>
 #include <QFile>
 #include <QPushbutton>
+#include <QDebug>
 #endif

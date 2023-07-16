@@ -1,5 +1,6 @@
 F:/proj/Desktop/cmake-build-release/Desktop_autogen/EWIEGA46WW/moc_Tool.cpp: F:/proj/Desktop/Tool.h \
   F:/proj/Desktop/cmake-build-release/Desktop_autogen/moc_predefs.h \
+  F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QDebug \
   F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QFile \
   F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QTimer \
   F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QVariant \

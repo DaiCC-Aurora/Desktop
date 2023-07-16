@@ -3,6 +3,7 @@ F:/proj/Desktop/GenshinImpact.h
  mmc:Q_OBJECT
  mdp:F:/proj/Desktop/GenshinImpact.h
  mdp:F:/proj/Desktop/cmake-build-release/Desktop_autogen/moc_predefs.h
+ mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QDebug
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QFile
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QTimer
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QVariant
@@ -679,6 +680,7 @@ F:/proj/Desktop/Tool.h
  mmc:Q_OBJECT
  mdp:F:/proj/Desktop/Tool.h
  mdp:F:/proj/Desktop/cmake-build-release/Desktop_autogen/moc_predefs.h
+ mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QDebug
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QFile
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QTimer
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QVariant
@@ -1347,6 +1349,7 @@ F:/proj/Desktop/clock.h
  mmc:Q_OBJECT
  mdp:F:/proj/Desktop/clock.h
  mdp:F:/proj/Desktop/cmake-build-release/Desktop_autogen/moc_predefs.h
+ mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QDebug
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QFile
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QTimer
  mdp:F:/Application/Qt/6.5.0/mingw_64/include/QtCore/QVariant
@@ -2027,9 +2030,9 @@ F:/proj/Desktop/clock.h
  uic:ui_clock.h
 F:/proj/Desktop/includes.h
 F:/proj/Desktop/ui_GenshinImpact.h
-F:/proj/Desktop/ui_Tool.h
-F:/proj/Desktop/ui_clock.h
 F:/proj/Desktop/GenshinImpact.cpp
+F:/proj/Desktop/ui_clock.h
+F:/proj/Desktop/ui_Tool.h
 F:/proj/Desktop/Tool.cpp
 F:/proj/Desktop/clock.cpp
 F:/proj/Desktop/main.cpp

@@ -4,7 +4,7 @@
         "location": "shaoguan",
         "language": "zh-Hans",
         "unit": "c",
-        "activated": false
+        "activated": true
     },
     "Genshin_Impact": {
         "uid": 128801387,
