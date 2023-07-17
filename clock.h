@@ -15,7 +15,8 @@ public:
 
 private:
     Ui::clock *ui;
-    QTimer *timer, *timer_wea;
+    QTimer *timer = new QTimer(this),
+        *timer_wea = new QTimer(this);
 
     void get_weather(Json::Value root);
     void update_time();

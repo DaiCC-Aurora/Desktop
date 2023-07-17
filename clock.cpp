@@ -26,16 +26,17 @@ Clock::Clock(Json::Value& root, QWidget *parent)
     this->move((swidth - this->width()) / 2,
                (sheight - this->height()) / 4
                );
+    ui->sen->setStyleSheet("font-size: 18pt;background:transparent;border-width:0;border-style:outset;");
+    ui->sen->setDisabled(true);
 
     // 定时器设置
-    this->timer = new QTimer(this);
-    this->timer->start(500);
+    this->timer->start(250);
     connect(this->timer, &QTimer::timeout, this, &Clock::update_time);
 
-    this->timer_wea = new QTimer(this);
-    this->timer->start(300000);
+    this->timer_wea->start(300000);
     connect(this->timer_wea, &QTimer::timeout, this, [=]() {
-        get_weather(root);
+        this->get_weather(root);
+        this->get_sen();
     });
 
     // 更改部分样式
@@ -43,9 +44,10 @@ Clock::Clock(Json::Value& root, QWidget *parent)
     ui->date->setAlignment(Qt::AlignCenter);
     ui->wea->setAlignment(Qt::AlignCenter);
 
+
     // 首次初始化
-    this->update_time();
     this->get_weather(root);
+    this->get_sen();
 }
 
 Clock::~Clock() {
@@ -104,9 +106,32 @@ void Clock::get_weather(Json::Value root) {
 }
 
 void Clock::update_time() {
+    time_t time_now = time(nullptr);
+    char temp_time[48],
+         temp_date[48];
+    strftime(temp_time, sizeof(temp_time), "%H : %M : %S", localtime(&time_now));
+    strftime(temp_date, sizeof(temp_date), "%Y / %m / %d", localtime(&time_now));
 
+    ui->time->setText(temp_time);
+    ui->date->setText(temp_date);
 }
 
 void Clock::get_sen() {
+    QFile file("./assets/text._res");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::warning(nullptr, "Oops", "无法加载text._res, 请重试");
+        std::exit(EXIT_FAILURE);
+    }
+    QTextStream in(&file);
+    std::vector<QString> lines;
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        lines.push_back(line);
+    }
+    file.close();
 
+    auto now = std::time(nullptr);
+    std::tm tm = *std::localtime(&now);
+    int day = tm.tm_yday;
+    ui->sen->setText(lines[day]);
 }
